@@ -1,0 +1,63 @@
+html {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 200%;
+  font-style: normal;
+  background-color: #FFF5F0;
+  overflow-x: hidden;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: museo-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  overflow-x: hidden;
+
+}
+
+.main {
+  width: 80vw;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  z-index: 0;
+  padding-top: 100px;
+  margin: 0 auto;
+
+}
+
+
+.left-circle {
+  height: 50vh;
+  width: 30vw;
+  top: 10%;
+  background-color: #fcdec9;
+  border-radius: 45%;
+  transform: rotate(-5deg)
+}
+
+
+.right-circle {
+  height: 40vh;
+  width: 40vw;
+  top: 10%;
+  background-color: #fcdec9;
+  border-radius: 50%;
+  transform: rotate(70deg)
+}
+
+
+@media (min-width: 0) and (max-width:736px) {
+  .main-nav {
+    display: none;
+  }
+
+  .main {
+    width: 90vw;
+  }
+}
