@@ -96,8 +96,6 @@ const MainNav = (props) => {
         return <StyledNavRight>
             {props.children}
         </StyledNavRight>
-    } else {
-        return null
     }
 }
 
