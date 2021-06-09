@@ -10,7 +10,8 @@ const Index = () => (
 
 
   <Col>
-    <H1>Pharmista</H1>
+    <H1>Revolutionising in
+      women's health.</H1>
     We at Pharmista Technologies are on a
     mission to revolutionise women's health
     by developing the worlds first reusable

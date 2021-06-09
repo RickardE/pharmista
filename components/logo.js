@@ -8,13 +8,11 @@ const StyledLogo = styled.div
         width: 20%;
         position: relative;
         float: left;
-        
  
 
         div {
-            width: 50%;   
+            width: 100%;   
             margin: 0 auto;
-            padding: 4% 0;
         }
 
 img {

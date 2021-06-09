@@ -13,11 +13,13 @@ import styled, { keyframes } from "styled-components";
 
 
 const StyledContent = styled.div`
-width: 80%;
+width: 100%;
 margin: 0 auto;
 display: block;
 z-index: 9;
 `
+
+
 
 
 
@@ -67,6 +69,7 @@ export default function Layout({
             <Clear></Clear>
             <StyledContent>
                 {children}
+                <Clear></Clear>
             </StyledContent>
             <Clear></Clear>
 

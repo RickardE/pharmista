@@ -4,7 +4,7 @@ const StyledNavLeft = styled.nav
     `
     position: relative;
     width: 40%;
-    padding: 4% 0;
+    padding: 8% 0;
     float: left;
 
     ul {
@@ -42,7 +42,7 @@ const StyledNavRight = styled.nav
     `
     position: relative;
     width: 40%;
-    padding: 4% 0;
+    padding: 8% 0;
     float: right;
   
 

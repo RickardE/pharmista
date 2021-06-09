@@ -17,20 +17,17 @@ body {
   font-weight: 500;
   font-style: normal;
   overflow-x: hidden;
-
+  min-height: 100vh;
 }
 
 .main {
-  width: 80vw;
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
   z-index: 0;
-  padding-top: 100px;
   margin: 0 auto;
-
+  width: 70%;
 }
-
 
 .left-circle {
   height: 50vh;
@@ -43,12 +40,12 @@ body {
 
 
 .right-circle {
-  height: 40vh;
+  height: 50vh;
   width: 40vw;
   top: 10%;
   background-color: #fcdec9;
   border-radius: 50%;
-  transform: rotate(70deg)
+  transform: rotate(22.5deg)
 }
 
 
@@ -58,6 +55,6 @@ body {
   }
 
   .main {
-    width: 90vw;
+    width: 100vw;
   }
 }

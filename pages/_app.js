@@ -3,6 +3,8 @@ import '../styles/globals.css'
 import { AnimatePresence, motion } from 'framer-motion'
 import Floating from '../components/floating'
 import Womens from '../components/womens'
+import styled from 'styled-components'
+import Clear from '../components/clear'
 
 
 
@@ -70,6 +72,15 @@ const contentPageMotionProps = {
   exit: 'pageExit',
   variants: contentVariants
 }
+
+
+const StyledContent = styled.div
+  `
+
+width: 80%;
+margin: 0px auto;
+
+`
 
 
 
