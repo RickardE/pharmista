@@ -52,11 +52,11 @@ export default function Layout({
                     <MainNav right>
                         <ul>
                             <li>
-                                <Link href="/">Awards</Link>
+                                <Link href="/awards">Awards</Link>
                             </li>
 
                             <li>
-                                <Link href="/">Contact</Link>
+                                <Link href="/contact">Contact</Link>
                             </li>
                         </ul>
                     </MainNav>
