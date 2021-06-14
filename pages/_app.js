@@ -5,7 +5,7 @@ import Floating from '../components/floating'
 import Womens from '../components/womens'
 import styled from 'styled-components'
 import Clear from '../components/clear'
-
+import { React, useEffect, useState } from 'react'
 
 
 const circleOneVariantsLeft = {
@@ -74,52 +74,56 @@ const contentPageMotionProps = {
 }
 
 
-const StyledContent = styled.div
-  `
-
-width: 80%;
-margin: 0px auto;
-
-`
+const MyApp = ({ Component, pageProps, router }) => {
+  const [loading, setLoading] = useState(true);
 
 
+  useEffect(() => {
+
+ 
+
+    window.addEventListener('load', () => {
+
+      setLoading(false);
 
 
 
-
-function MyApp({ Component, pageProps, router }) {
+    })
+  })
   return (
     <>
+      {
+        loading ? 'Loading...' :
+          <>
+            <Layout>
+              <AnimatePresence exitBeforeEnter>
+                <motion.div key={router.route} {...contentPageMotionProps}>
+                  <Component {...pageProps} />
+                </motion.div></AnimatePresence>
+            </Layout>
+
+            <Floating align={'left'}>
+              <AnimatePresence exitBeforeEnter>
+                <motion.div key={router.route} {...circleOnePageMotionPropsLeft}>
+
+                  <div className={'left-circle'}></div>
+                </motion.div >
+              </AnimatePresence>
+            </Floating>
 
 
-      <Layout>
-        <AnimatePresence exitBeforeEnter>
-          <motion.div key={router.route} {...contentPageMotionProps}>
-            <Component {...pageProps} />
-          </motion.div></AnimatePresence>
-      </Layout>
+            <Floating align={'right'}>
+              <AnimatePresence exitBeforeEnter>
+                <motion.div key={router.route} {...circleOnePageMotionPropsRight}>
 
-      <Floating align={'left'}>
-        <AnimatePresence exitBeforeEnter>
-          <motion.div key={router.route} {...circleOnePageMotionPropsLeft}>
-
-            <div className={'left-circle'}></div>
-          </motion.div >
-        </AnimatePresence>
-      </Floating>
-
-
-      <Floating align={'right'}>
-        <AnimatePresence exitBeforeEnter>
-          <motion.div key={router.route} {...circleOnePageMotionPropsRight}>
-
-            <div className={'right-circle'}></div>
-          </motion.div >
-        </AnimatePresence>
-      </Floating>
-      {router.asPath === '/' ? <Womens /> : ''}
+                  <div className={'right-circle'}></div>
+                </motion.div >
+              </AnimatePresence>
+            </Floating>
+            {router.asPath === '/' ? <Womens /> : ''}
+          </>
+      }
     </>
-
   )
 
 

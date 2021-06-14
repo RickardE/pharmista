@@ -1,9 +1,10 @@
 import styled from "styled-components"
 
-const StyledColLeft = styled.div
+const StyledCol = styled.div
     `
     float: left; 
     width: 40%;
+
 
 
 
@@ -13,21 +14,19 @@ const StyledColLeft = styled.div
     }
 
 
-    `
-
-const StyledColright = styled.div
-    `
-    float: left; 
-    width: 50%;
+    
 
 
     `
 
 
 const Col = (props) => {
-    return <StyledColLeft>
+
+
+    return <StyledCol>
         {props.children}
-    </StyledColLeft>
+    </StyledCol>
+
 }
 
 export default Col

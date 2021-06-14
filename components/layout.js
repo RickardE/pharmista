@@ -35,34 +35,26 @@ export default function Layout({
             </Head>
             <Header>
 
-                <div className={'main-nav'}>
-                    <MainNav left>
-                        <ul>
-                            <li>
-                                <Link href="/">Home</Link>
-                            </li>
 
-                            <li>
-                                <Link href="/about">About us</Link>
-                            </li>
+                <MainNav left>
+                    <ul>
+                        <li>
+                            <Link href="/">Home</Link>
+                        </li>
 
-                        </ul>
-                    </MainNav>
-                </div>
+                        <li>
+                            <Link href="/about">About us</Link>
+                        </li>
+
+                        <li>
+                            <Link href="/contact">Contact</Link>
+                        </li>
+
+                    </ul>
+                </MainNav>
+
                 <Logo></Logo>
-                <div className={'main-nav'}>
-                    <MainNav right>
-                        <ul>
-                            <li>
-                                <Link href="/awards">Awards</Link>
-                            </li>
 
-                            <li>
-                                <Link href="/contact">Contact</Link>
-                            </li>
-                        </ul>
-                    </MainNav>
-                </div>
 
 
             </Header>

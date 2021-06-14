@@ -1,11 +1,12 @@
 import styled from "styled-components"
 
-const StyledNavLeft = styled.nav
+const StyledNav = styled.nav
     `
     position: relative;
     width: 40%;
     padding: 8% 0;
     float: left;
+    z-index: 3;
 
     ul {
     width: 100%;
@@ -13,6 +14,7 @@ const StyledNavLeft = styled.nav
     padding: 0;
     margin: 0;
 
+
 }
 
 li {
@@ -31,72 +33,45 @@ a {
     font-size: 1rem;
     text-decoration: none;
     color: #000;
-
-
-}
-
-`
-
-
-const StyledNavRight = styled.nav
-    `
     position: relative;
-    width: 40%;
-    padding: 8% 0;
-    float: right;
+    z-index: 9;
+     transition: 0.3s;
+
+
+}
+
+a:hover:after {
+    content: '';
+    position: absolute;
+    background-color: #fcdec9;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+       transition: 0.6s;
   
-
-
-    ul {
-    width: 100%;
-    text-align: right;
-    padding: 0;
-    margin: 0;
-
 }
 
 
-li {
-    list-style: none;
-    display: inline;
 
-}
-
-li:nth-child(2) {
-       padding: 0 10%;
-}
-a {
-    color: orange;
-    font-family: filson-pro, sans-serif;    
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1rem;
-    text-decoration: none;
-    color: #000;
-
-
-}
-
+@media (min-width: 0) and (max-width:913px) {
+display: none;
 `
+
+
+
 
 
 
 const MainNav = (props) => {
 
+    return <StyledNav>
+        {props.children}
+    </StyledNav>
 
-
-
-    if (props.left) {
-        return <StyledNavLeft>
-            {props.children}
-        </StyledNavLeft>
-
-    } else if (props.right) {
-
-        return <StyledNavRight>
-            {props.children}
-        </StyledNavRight>
-    }
 }
 
 export default MainNav

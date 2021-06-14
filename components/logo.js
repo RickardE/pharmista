@@ -18,6 +18,18 @@ const StyledLogo = styled.div
 img {
     max-width: 100%;
 }
+
+
+
+@media (min-width: 0) and (max-width:913px) {
+margin: 0 auto !important;
+float: none;
+width: 30%;
+
+
+}
+
+
 `
 
 
