@@ -38,7 +38,6 @@ const Womens = () => {
             opacity: 0,
         })
 
-
     })
 
     return <StyledWomens><img className="women" src={'../assets/illustrations/illustration_kvinnor.svg'} /></StyledWomens>
