@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import H2 from "./h2"
+
 
 const logos = [
     '../assets/logos/almi.png',
@@ -26,7 +26,6 @@ const StyledAwards = styled.div
 
 const Awards = () => {
     return <>
-        <H2>Powered by</H2>
         <StyledAwards>
             {logos.map((i) =>
                 <img src={i} />

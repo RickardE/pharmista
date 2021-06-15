@@ -7,13 +7,20 @@ const StyledContainer = styled.div
 width: 100%;
 height: auto;
 padding: 10vh 0;
-float: left;
-
-
+margin-bottom: 5vh;
+position: relative;
+overflow: hidden;
 
 
   :nth-child(2n) div {
         float: right;
+ }
+
+ img.test {
+     float: left;
+     position: absolute;
+     transform: translateY(-50%);
+    top: 50%;
  }
 
 `

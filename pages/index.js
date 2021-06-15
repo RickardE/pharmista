@@ -12,8 +12,6 @@ import H2 from '../components/h2';
 
 
 
-
-
 const Index = ({ content }) => {
 
 
@@ -40,9 +38,33 @@ const Index = ({ content }) => {
     });
 
     t2.from('.test2', {
-      yPercent: 100
+      yPercent: 150
     })
 
+    const t3 = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.trigger3',
+        start: "top center"
+      }
+    });
+
+
+    t3.from('.test3', {
+      yPercent: 150
+    })
+
+
+    const t4 = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.trigger4',
+        start: "top center"
+      }
+    });
+
+
+    t4.from('.test4', {
+      yPercent: 150
+    })
 
 
 
@@ -64,32 +86,40 @@ const Index = ({ content }) => {
 
 
       <Container>
-        <Col>
-          <div className="trigger2"></div>
-          <div className='test2'>
+        <div className="trigger2"></div>
+        <div className='test2'>
+          <img className="test" src="../assets/illustrations/glasses.png" />
+          <Col>
             <H2>{content[1].header}</H2>
             <p>{content[1].body}</p>
             <Clear></Clear>
-          </div>
-        </Col>
+          </Col>
+        </div>
+        <Clear></Clear>
+      </Container>
+
+      <Container>
+        <div className="trigger3"></div>
+        <div className="test3">
+          <H2>Powered by</H2>
+          <Awards></Awards>
+          <Clear></Clear>
+        </div>
         <Clear></Clear>
       </Container>
 
 
 
-      <Awards></Awards>
-
-
-
       <Container>
-        <Col>
-          <div className="trigger2"></div>
-          <div className='test2'>
+        <div className="trigger4"></div>
+        <div className='test4'>
+          <img className="test" src="../assets/illustrations/bulb.png" />
+          <Col>
             <H2>{content[2].header}</H2>
             <p>{content[2].body}</p>
             <Clear></Clear>
-          </div>
-        </Col>
+          </Col>
+        </div>
         <Clear></Clear>
       </Container>
 
