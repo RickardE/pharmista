@@ -23,6 +23,24 @@ overflow: hidden;
     top: 50%;
  }
 
+     @media (min-width: 0px) and (max-width: 667px) { 
+
+
+         img.test {
+            top: 5vh;
+            position: relative;
+            width: 50%;
+            max-width: 100%;
+            transform: none;
+            margin: 0 auto;
+            float: none;
+         }
+
+
+
+
+     }
+
 `
 
 

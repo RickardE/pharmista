@@ -18,7 +18,7 @@ const StyledAwards = styled.div
 
     img {
         max-width: 16%;
-        margin: 1% 2%;
+        margin: 0 2%;
 
     }
     

@@ -3,14 +3,16 @@ import styled from "styled-components"
 const StyledCol = styled.div
     `
     float: left; 
-    width: 40%;
+    width: 50%;
 
 
 
 
-    @media (min-width: 0px) and (max-width: 414px) {
+    @media (min-width: 0px) and (max-width: 667px) {
 
-        width: 80%;
+        width: 100%;
+        float: none;
+        margin: 0 auto;
     }
 
 

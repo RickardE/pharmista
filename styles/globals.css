@@ -46,3 +46,8 @@ body {
   transform: rotate(22.5deg)
 }
 
+@media (min-width: 0px) and (max-width: 667px) {
+  .main {
+    width: 90%;
+  }
+}
